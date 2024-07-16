@@ -5459,6 +5459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6ff5e7c92519444bc2a7ca46558963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 0}
   m_Text: {fileID: 88162464}
 --- !u!114 &303932316
 MonoBehaviour:
@@ -24722,6 +24724,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6ff5e7c92519444bc2a7ca46558963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 0}
   m_Text: {fileID: 637063500}
 --- !u!114 &1453317663
 MonoBehaviour:
@@ -40354,6 +40358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6ff5e7c92519444bc2a7ca46558963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 4805857747201319065}
+  audioClip: {fileID: 8300000, guid: 7615483b1b5c6e24682221cbe929e038, type: 3}
   m_Text: {fileID: 5401826475223467355}
 --- !u!65 &3067186531216571675
 BoxCollider:
@@ -41188,6 +41194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6ff5e7c92519444bc2a7ca46558963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 2356455250447628467}
+  audioClip: {fileID: 8300000, guid: 2914d7910f97c244695ad98a9ed60938, type: 3}
   m_Text: {fileID: 4146931691505713183}
 --- !u!33 &3984401127979448036
 MeshFilter:
@@ -41968,7 +41976,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7615483b1b5c6e24682221cbe929e038, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -42149,7 +42157,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -43686,6 +43694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6ff5e7c92519444bc2a7ca46558963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 0}
   m_Text: {fileID: 756719423976142440}
 --- !u!33 &6386637746323483938
 MeshFilter:
@@ -45539,6 +45549,19 @@ MonoBehaviour:
       - m_Target: {fileID: 2044849601}
         m_TargetAssemblyTypeName: DeleteDrawing, Assembly-CSharp
         m_MethodName: DeleteDrawings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3956804947731924997}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.IncrementUIText,
+          Unity.XR.Interaction.Toolkit.Samples.StarterAssets
+        m_MethodName: PlaySound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

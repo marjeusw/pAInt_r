@@ -75,7 +75,7 @@ public class PenUpdated : MonoBehaviour
 
                 // Convert v3 to v2
                 Vector2 v2 = new Vector2(tipPosition2D.x, tipPosition2D.y);
-                Debug.Log("Vector2 is: " + v2);
+                //Debug.Log("Vector2 is: " + v2);
             }
         }
     }

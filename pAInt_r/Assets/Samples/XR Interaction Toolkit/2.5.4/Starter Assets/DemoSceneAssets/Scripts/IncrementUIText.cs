@@ -8,6 +8,8 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
     /// </summary>
     public class IncrementUIText : MonoBehaviour
     {
+        [SerializeField] public AudioSource audioSource;
+        [SerializeField] public AudioClip audioClip;
         [SerializeField]
         [Tooltip("The Text component this behavior uses to display the incremented value.")]
         Text m_Text;
@@ -40,6 +42,13 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             m_Count += 1;
             if (m_Text != null)
                 m_Text.text = m_Count.ToString();
+
+            PlaySound();
+        }
+
+        public void PlaySound()
+        {
+            audioSource.PlayOneShot(audioClip);
         }
     }
 }

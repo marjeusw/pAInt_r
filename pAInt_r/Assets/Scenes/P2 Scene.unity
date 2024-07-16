@@ -39156,7 +39156,7 @@ Transform:
   m_GameObject: {fileID: 7685503897871308757}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24609566, y: -0.95459735, z: 2.0220032}
+  m_LocalPosition: {x: -0.8609028, y: -0.6653534, z: 2.0220032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39257,7 +39257,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8091396093939323371}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: ActivateDrawing
         m_Mode: 1
@@ -39272,7 +39272,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8091396093939323371}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: DeactivateDrawing
         m_Mode: 1
@@ -40941,7 +40941,7 @@ Transform:
   m_GameObject: {fileID: 1723255612918143189}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.059000015, y: -1.1383698, z: -0.7369957}
+  m_LocalPosition: {x: -1.0479984, y: -0.84912586, z: -0.7369957}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -41204,7 +41204,7 @@ Transform:
   m_GameObject: {fileID: 3588004623705962398}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.416, y: -0.429, z: 2.062}
+  m_LocalPosition: {x: -1.5229985, y: -0.13975605, z: 2.062}
   m_LocalScale: {x: 0.1804012, y: 0.23102, z: 0.136549}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -41361,7 +41361,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8185929853950553608}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: ActivateDrawing
         m_Mode: 1
@@ -41376,7 +41376,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8185929853950553608}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: DeactivateDrawing
         m_Mode: 1
@@ -42323,7 +42323,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8208974096247488960}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: ActivateDrawing
         m_Mode: 1
@@ -42338,7 +42338,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8208974096247488960}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: DeactivateDrawing
         m_Mode: 1
@@ -42599,7 +42599,7 @@ Transform:
   m_GameObject: {fileID: 7028998756368731135}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.772, y: -0.86824393, z: 1.961}
+  m_LocalPosition: {x: -0.335, y: -0.579, z: 1.961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42812,7 +42812,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8886308692953315549}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: ActivateDrawing
         m_Mode: 1
@@ -42827,7 +42827,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8886308692953315549}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: DeactivateDrawing
         m_Mode: 1
@@ -43004,7 +43004,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8864220362580695775}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: ActivateDrawing
         m_Mode: 1
@@ -43019,7 +43019,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8864220362580695775}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: DeactivateDrawing
         m_Mode: 1
@@ -44104,7 +44104,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8280701325147587005}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: ActivateDrawing
         m_Mode: 1
@@ -44119,7 +44119,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8280701325147587005}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: DeactivateDrawing
         m_Mode: 1
@@ -44548,7 +44548,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8612878738274052961}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: ActivateDrawing
         m_Mode: 1
@@ -44563,7 +44563,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8612878738274052961}
         m_TargetAssemblyTypeName: PenUpdated, Assembly-CSharp
         m_MethodName: DeactivateDrawing
         m_Mode: 1

@@ -5,56 +5,66 @@ using UnityEngine.Video;
 
 public class robManager : MonoBehaviour
 {
-    //public MeshRenderer RobArtTorso;
-    //public MeshRenderer RobArtScarf;
-    public GameObject RobArtTorso1;
-    public GameObject RobArtScarf1;
+	//public MeshRenderer RobArtTorso;
+	//public MeshRenderer RobArtScarf;
+	public GameObject RobArtTorso1;
+	public GameObject RobArtScarf1;
 
-    //public GameObject VideoPlayer;
+	//public GameObject VideoPlayer;
 
-    public VideoPlayer vid;
-    public VideoClip myclip;
-
-
-
-    void Start()
-    {
-      //  RobArt.SetActive(true);
-       
-    }
-
-    //pressing space starts glitching coroutine 
-    //some bugs occur if we don't use a button to start it so maybe we could use a button the user would use anyways (like switching colours or something)
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(Glitching());
-        }
-    }
+	public VideoPlayer vid;
+	public VideoClip myclip;
+	robAnim robart;
+	public GameObject GameHandler;
+	//bool endWait;
 
 
-    //glitching appears after a few seconds again
-    IEnumerator Glitching()
-    {
-        SkinnedMeshRenderer MeshComponent = RobArtTorso1.GetComponent<SkinnedMeshRenderer>();
-        SkinnedMeshRenderer MeshComponent2 = RobArtScarf1.GetComponent<SkinnedMeshRenderer>();
+	void Start()
+	{
+		//  RobArt.SetActive(true);
 
-        //VideoPlayer Clip = VideoPlayer.GetComponent<VideoPlayer>();
-        
-        yield return new WaitForSeconds(5f);
+	}
 
-        //RobArtTorso.enabled=true;
-        //RobArtScarf.enabled = true;
-       
+	//pressing space starts glitching coroutine
+	//some bugs occur if we don't use a button to start it so maybe we could use a button the user would use anyways (like switching colours or something)
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			StartCoroutine(Glitching());
+		}
+	}
 
-        MeshComponent.enabled = true;
-        MeshComponent2.enabled = true;
 
-        //for the bluescreen
-        vid.clip = myclip;
+	//glitching appears after a few seconds again
+	IEnumerator Glitching()
+	{
+		SkinnedMeshRenderer MeshComponent = RobArtTorso1.GetComponent<SkinnedMeshRenderer>();
+		SkinnedMeshRenderer MeshComponent2 = RobArtScarf1.GetComponent<SkinnedMeshRenderer>();
 
-    }
+		//VideoPlayer Clip = VideoPlayer.GetComponent<VideoPlayer>();
+
+		yield return new WaitForSeconds(5f);
+
+		//RobArtTorso.enabled=true;
+		//RobArtScarf.enabled = true;
+		GlitchAnim();
+
+		MeshComponent.enabled = true;
+		MeshComponent2.enabled = true;
+
+		//for the bluescreen
+		vid.clip = myclip;
+		//endWait = true;
+	}
+
+	void GlitchAnim()
+	{
+		robart = GameHandler.GetComponent<robAnim>();
+		Animator animator = robart.GetComponent<Animator>();
+		robart.GlitchAnim();
+	}
+
 
 
 }

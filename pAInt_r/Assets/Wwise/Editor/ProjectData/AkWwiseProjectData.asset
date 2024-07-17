@@ -1,0 +1,658 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d1f2d589c58e540a741836fc8dfae6, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: c622daf06ab82f4ba4d9fdf89d6c1326
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: c622daf06ab82f4ba4d9fdf89d6c1326
+    GuidInternal: 
+    m_lastTime: -8584811028994775808
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: f07a8d7c1c240e43ac2072956e4643e6
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: f07a8d7c1c240e43ac2072956e4643e6
+    GuidInternal: 
+    m_lastTime: -8584811028994775808
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f07a8d7c1c240e43ac2072956e4643e6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: f5452d0cc9d1fd4ab78e771a32da2618
+    ParentPath: SoundBanks\Default Work Unit
+    guid: f5452d0cc9d1fd4ab78e771a32da2618
+    GuidInternal: 
+    m_lastTime: -8584809893834775808
+    List:
+    - name: Soundbank1
+      guid: 62cadd220ed9e24faf3650223e721c2f
+      id: 1647770721
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f5452d0cc9d1fd4ab78e771a32da2618
+      - ElementName: Soundbank1
+        ObjectType: 7
+        guid: 62cadd220ed9e24faf3650223e721c2f
+      Path: SoundBanks\Default Work Unit\Soundbank1
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 4bf05c0d3770a4498c1aeadf855e26cf
+    ParentPath: Events\Default Work Unit
+    guid: 4bf05c0d3770a4498c1aeadf855e26cf
+    GuidInternal: 
+    m_lastTime: -8584809893834775808
+    List:
+    - name: BrushGrabbing
+      guid: aa46f9660a8d7e4c884dc365c69dd79e
+      id: 4172454835
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: SpielerSoundsControl
+        ObjectType: 4
+        guid: 53c0d7635cfcc543b31bd9ebe79790b5
+      - ElementName: BrushGrabbing
+        ObjectType: 3
+        guid: aa46f9660a8d7e4c884dc365c69dd79e
+      Path: Events\Default Work Unit\SFXControl\SpielerSoundsControl\BrushGrabbing
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BrushStroking
+      guid: 83fc1a35fc8bdb40b5c92a7a81009faa
+      id: 3687705858
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: SpielerSoundsControl
+        ObjectType: 4
+        guid: 53c0d7635cfcc543b31bd9ebe79790b5
+      - ElementName: BrushStroking
+        ObjectType: 3
+        guid: 83fc1a35fc8bdb40b5c92a7a81009faa
+      Path: Events\Default Work Unit\SFXControl\SpielerSoundsControl\BrushStroking
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ButtonPressing
+      guid: 11f1222cb137154ab193f0647dea209b
+      id: 3047472526
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: SpielerSoundsControl
+        ObjectType: 4
+        guid: 53c0d7635cfcc543b31bd9ebe79790b5
+      - ElementName: ButtonPressing
+        ObjectType: 3
+        guid: 11f1222cb137154ab193f0647dea209b
+      Path: Events\Default Work Unit\SFXControl\SpielerSoundsControl\ButtonPressing
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FadeInBlack
+      guid: 4a52c31a3ac387488e73ca4249dd22c3
+      id: 3897304127
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: FadeInBlack
+        ObjectType: 3
+        guid: 4a52c31a3ac387488e73ca4249dd22c3
+      Path: Events\Default Work Unit\MusicControl\FadeInBlack
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FadeInBlue
+      guid: 16d92ca1856d5241b5ed6abd92d988a1
+      id: 1928356294
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: FadeInBlue
+        ObjectType: 3
+        guid: 16d92ca1856d5241b5ed6abd92d988a1
+      Path: Events\Default Work Unit\MusicControl\FadeInBlue
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FadeInBrown
+      guid: c1b3812c057cf44d95ced754115e6fec
+      id: 1649949034
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: FadeInBrown
+        ObjectType: 3
+        guid: c1b3812c057cf44d95ced754115e6fec
+      Path: Events\Default Work Unit\MusicControl\FadeInBrown
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FadeInCyan
+      guid: d86e8d4289c4cb4a9470ecf76dff15b5
+      id: 128172163
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: FadeInCyan
+        ObjectType: 3
+        guid: d86e8d4289c4cb4a9470ecf76dff15b5
+      Path: Events\Default Work Unit\MusicControl\FadeInCyan
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FadeInGreen
+      guid: 76efcf200e5f8a4da8fbe454414f55c2
+      id: 715624071
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: FadeInGreen
+        ObjectType: 3
+        guid: 76efcf200e5f8a4da8fbe454414f55c2
+      Path: Events\Default Work Unit\MusicControl\FadeInGreen
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FadeInMagenta
+      guid: eceb7caf9e41ea4a889985aa6906370c
+      id: 2374313631
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: FadeInMagenta
+        ObjectType: 3
+        guid: eceb7caf9e41ea4a889985aa6906370c
+      Path: Events\Default Work Unit\MusicControl\FadeInMagenta
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FadeInRed
+      guid: a61bd20a6cf79647945515c9a9346b2b
+      id: 3371540715
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: FadeInRed
+        ObjectType: 3
+        guid: a61bd20a6cf79647945515c9a9346b2b
+      Path: Events\Default Work Unit\MusicControl\FadeInRed
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FadeInWhite
+      guid: 22ba7129627f5240a944c472b6ed43ab
+      id: 2220286293
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: FadeInWhite
+        ObjectType: 3
+        guid: 22ba7129627f5240a944c472b6ed43ab
+      Path: Events\Default Work Unit\MusicControl\FadeInWhite
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FadeInYellow
+      guid: 5c2f2b708d0f76449f60cc6faced8ee6
+      id: 3463425222
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: FadeInYellow
+        ObjectType: 3
+        guid: 5c2f2b708d0f76449f60cc6faced8ee6
+      Path: Events\Default Work Unit\MusicControl\FadeInYellow
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Glitches
+      guid: b459c6d729fdfe4ea65ec5f6249f9c8e
+      id: 606143358
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: RoboterSoundsControl
+        ObjectType: 4
+        guid: 4135bbb991800a49b0da79d3f1ebb029
+      - ElementName: Glitches
+        ObjectType: 3
+        guid: b459c6d729fdfe4ea65ec5f6249f9c8e
+      Path: Events\Default Work Unit\SFXControl\RoboterSoundsControl\Glitches
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: GlitchesLoopsStartControl
+      guid: 27320b97cd9d9d428bdf9aa02702eb9c
+      id: 787290108
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: RoboterSoundsControl
+        ObjectType: 4
+        guid: 4135bbb991800a49b0da79d3f1ebb029
+      - ElementName: GlitchesLoopsStartControl
+        ObjectType: 3
+        guid: 27320b97cd9d9d428bdf9aa02702eb9c
+      Path: Events\Default Work Unit\SFXControl\RoboterSoundsControl\GlitchesLoopsStartControl
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: GlitchesLoopsStopControl
+      guid: 72ef1ae7f7a34941a4c61f2e7bc0b969
+      id: 1951330894
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: RoboterSoundsControl
+        ObjectType: 4
+        guid: 4135bbb991800a49b0da79d3f1ebb029
+      - ElementName: GlitchesLoopsStopControl
+        ObjectType: 3
+        guid: 72ef1ae7f7a34941a4c61f2e7bc0b969
+      Path: Events\Default Work Unit\SFXControl\RoboterSoundsControl\GlitchesLoopsStopControl
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ImageGeneration
+      guid: 120cdd2132a1244ebb4ab604eff0b265
+      id: 3532402582
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: ImageGenerationSoundsControl
+        ObjectType: 4
+        guid: a6e605896eca76418a83216508bcd5ef
+      - ElementName: ImageGeneration
+        ObjectType: 3
+        guid: 120cdd2132a1244ebb4ab604eff0b265
+      Path: Events\Default Work Unit\SFXControl\ImageGenerationSoundsControl\ImageGeneration
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ImageGenerationSoundsControl
+      guid: a6e605896eca76418a83216508bcd5ef
+      id: 79527025
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: ImageGenerationSoundsControl
+        ObjectType: 4
+        guid: a6e605896eca76418a83216508bcd5ef
+      Path: Events\Default Work Unit\SFXControl\ImageGenerationSoundsControl
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Movement
+      guid: e44ff0eb0bc98246bc6b5fbd939ddde7
+      id: 2129636626
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: RoboterSoundsControl
+        ObjectType: 4
+        guid: 4135bbb991800a49b0da79d3f1ebb029
+      - ElementName: Movement
+        ObjectType: 3
+        guid: e44ff0eb0bc98246bc6b5fbd939ddde7
+      Path: Events\Default Work Unit\SFXControl\RoboterSoundsControl\Movement
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MusicControl
+      guid: 3d7e528813ff9941a68fee5b49a8fc18
+      id: 452733453
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      Path: Events\Default Work Unit\MusicControl
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayMusic
+      guid: 514e407c941ebf48979aaf5b39f9daf2
+      id: 417627684
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: PlayMusic
+        ObjectType: 3
+        guid: 514e407c941ebf48979aaf5b39f9daf2
+      Path: Events\Default Work Unit\MusicControl\PlayMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Reset
+      guid: 493e3806da271b45840203f49ac0a04e
+      id: 4017455162
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: MusicControl
+        ObjectType: 4
+        guid: 3d7e528813ff9941a68fee5b49a8fc18
+      - ElementName: Reset
+        ObjectType: 3
+        guid: 493e3806da271b45840203f49ac0a04e
+      Path: Events\Default Work Unit\MusicControl\Reset
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: RoboterSoundsControl
+      guid: 4135bbb991800a49b0da79d3f1ebb029
+      id: 3232861885
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: RoboterSoundsControl
+        ObjectType: 4
+        guid: 4135bbb991800a49b0da79d3f1ebb029
+      Path: Events\Default Work Unit\SFXControl\RoboterSoundsControl
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFXControl
+      guid: b022fc697a9f764493d6401d060acb5c
+      id: 3552539621
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      Path: Events\Default Work Unit\SFXControl
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpielerSoundsControl
+      guid: 53c0d7635cfcc543b31bd9ebe79790b5
+      id: 2273909854
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bf05c0d3770a4498c1aeadf855e26cf
+      - ElementName: SFXControl
+        ObjectType: 4
+        guid: b022fc697a9f764493d6401d060acb5c
+      - ElementName: SpielerSoundsControl
+        ObjectType: 4
+        guid: 53c0d7635cfcc543b31bd9ebe79790b5
+      Path: Events\Default Work Unit\SFXControl\SpielerSoundsControl
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 44c330c3c834b949876998b5dd219275
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 44c330c3c834b949876998b5dd219275
+    GuidInternal: 
+    m_lastTime: -8584811028994775808
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: a72073f356a437419eb6471d966c55ee
+    ParentPath: States\Default Work Unit
+    guid: a72073f356a437419eb6471d966c55ee
+    GuidInternal: 
+    m_lastTime: -8584811028994775808
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25b78fde032c0e48953b57d177d0692f
+    ParentPath: Switches\Default Work Unit
+    guid: 25b78fde032c0e48953b57d177d0692f
+    GuidInternal: 
+    m_lastTime: -8584811028994775808
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 54335915ce0fe94d9642619cf99e24dc
+    ParentPath: Triggers\Default Work Unit
+    guid: 54335915ce0fe94d9642619cf99e24dc
+    GuidInternal: 
+    m_lastTime: -8584811028994775808
+    List: []
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 0
+  CurrentPluginConfig: 

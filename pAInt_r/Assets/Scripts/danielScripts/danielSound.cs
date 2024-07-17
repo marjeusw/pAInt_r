@@ -6,7 +6,7 @@ public class danielSound : MonoBehaviour
 {
 	public GameObject Animatic;
 	public robAnim robart;
-	public GameObject GameHandler;
+	//public GameObject GameHandler;
 	//public Animator animator;
 
 	// - - - - - - - - - - - - - - - - - - - - -
@@ -42,7 +42,7 @@ public class danielSound : MonoBehaviour
 
 		//animation robart
 		
-		Animator animator = robart.GetComponent<Animator>();
+		Animator animator = gameObject.GetComponent<Animator>();
 		robart.IdleAnim();
 	}
 

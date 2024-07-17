@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.Events;
 
 
 public class RobArtCollisionHandler : MonoBehaviour
@@ -19,18 +20,9 @@ public class RobArtCollisionHandler : MonoBehaviour
 	robAnim robart;
 	public GameObject GameHandler;
 
-	private void Start()
-	{
- 
-	}
-
-	private void Update()
-	{
-   	 
-	}
-
-	//checks for collision
-	public void OnCollisionEnter(Collision collision)
+    
+    //checks for collision
+    public void OnCollisionEnter(Collision collision)
 	{
     	collide = true;
     	Debug.Log("Collision");
@@ -40,26 +32,22 @@ public class RobArtCollisionHandler : MonoBehaviour
 	//turns off meshrenderer
 	public void TurnOff()
 	{
-    	if (collide == true)
-    	{
+        Debug.Log("Why isn't this working!?");
+        //RobArtTorso.SetActive(false); //no setactive but meshrenderer off
+        //RobArtScarf.SetActive(false);
+        SkinnedMeshRenderer MeshComponent = RobArtTorso1.GetComponent<SkinnedMeshRenderer>();
+        SkinnedMeshRenderer MeshComponent2 = RobArtScarf1.GetComponent<SkinnedMeshRenderer>();
 
-        	//RobArtTorso.SetActive(false); //no setactive but meshrenderer off
-        	//RobArtScarf.SetActive(false);
-        	SkinnedMeshRenderer MeshComponent = RobArtTorso1.GetComponent<SkinnedMeshRenderer>();
-        	SkinnedMeshRenderer MeshComponent2 = RobArtScarf1.GetComponent<SkinnedMeshRenderer>();
+        MeshComponent.enabled = false;
+        MeshComponent2.enabled = false;
 
-        	MeshComponent.enabled = false;
-        	MeshComponent2.enabled = false;
+        //for the bluescreen
+        vid.clip = myclip;
 
-        	//for the bluescreen
-        	vid.clip = myclip;
+        Idle();
 
-        	Idle();
-
-        	collide = false;
-      	 
-    	}
-	}
+        //collide = false;
+    }
 
 	void Idle()
 	{

@@ -6,6 +6,7 @@ public class danielSound : MonoBehaviour
 {
 	public GameObject Animatic;
 	public robAnim robart;
+	public GameObject Robart;
 	//public GameObject GameHandler;
 	//public Animator animator;
 
@@ -39,6 +40,13 @@ public class danielSound : MonoBehaviour
 
 		startMusic();
 		Animatic.SetActive(false);
+
+		//setting robarts rotation in general direction 
+		Robart.transform.eulerAngles = new Vector3(
+			Robart.transform.eulerAngles.x,
+			Robart.transform.eulerAngles.y -90,
+			Robart.transform.eulerAngles.z
+			);
 
 		//animation robart
 		

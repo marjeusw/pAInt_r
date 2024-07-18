@@ -8,6 +8,8 @@ using UnityEngine.Networking;
 using System.IO;
 using UnityEngine.Serialization;
 using UnityEditor;
+using UnityEngine.Video;
+
 
 public class EverythingAPI : MonoBehaviour
 {
@@ -18,6 +20,10 @@ public class EverythingAPI : MonoBehaviour
     
     private int ImagesCounter = 0;
     private robAnim robAnim => GetComponent<robAnim>();
+    //screen2Danim
+    public VideoPlayer vid;
+    public VideoClip cheerClip;
+    public VideoClip idleClip;
 
     #region Screenshot-taker
 
@@ -322,7 +328,8 @@ public class EverythingAPI : MonoBehaviour
 
             // robart animation reaction
             robAnim.CheerAnim();
-
+            //anim2D
+            vid.clip = cheerClip;
             StartCoroutine(WaitForAudioEnd(audioSource));
         }
         else
@@ -339,6 +346,7 @@ public class EverythingAPI : MonoBehaviour
 
         // robart anim stuff
         robAnim.IdleAnim();
+        vid.clip = idleClip;
 
         if (ImagesCounter == 3)
         {

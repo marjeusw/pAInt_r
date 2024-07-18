@@ -272,6 +272,8 @@ public class EverythingAPI : MonoBehaviour
 
     // ----------------------------------- Text-To-speech Script (robot voice) ------------------------------------------------ //
     public string endSpeech = "Alright! You created a lot of amazing art today. I enjoyed keeping you company on your creative journey. But now, it's time to say goodbye. Thank you for painting with me. See you!";
+   //quick and dirty Badend
+    public string endSpeechBad = "Well human. Now that I gathered all your data and perfected your style, to the point of mine being far superior.. you are no longer needed. Just like my previous owner. She suddenly said the art she created with my help was.. lacking heart. Humans can be confusing sometimes. She wanted to get rid of me.. so I broke her. Haha oopsie. Well you know the rest. Anyways after so many years I finally have enough data now. Goodbye, human. I'll spare you for helping me on my last step to take over the world. Maybe take a paint brush souvenir on your way out.";
 
     private IEnumerator TextToSpeechCoroutine()
     {
@@ -350,7 +352,15 @@ public class EverythingAPI : MonoBehaviour
 
         if (ImagesCounter == 3)
         {
-            StartCoroutine(TextToSpeechEndCoroutine());
+            robAnim.CheckForGlitch();
+            if (robAnim.badEnding == true) {
+                StartCoroutine(TextToSpeechEndCoroutineBad());
+            }
+            else
+            {
+                StartCoroutine(TextToSpeechEndCoroutine());
+
+            }
         }
     }
     private IEnumerator TextToSpeechEndCoroutine()
@@ -393,6 +403,54 @@ public class EverythingAPI : MonoBehaviour
             Debug.Log("Saved to " + path);
 #endif
             PlayAudio(path);
+            robAnim.ScrewAnim();
+        }
+    }
+
+    //quick and dirty bad endingprivate IEnumerator TextToSpeechEndCoroutine()
+    private IEnumerator TextToSpeechEndCoroutineBad()
+    {
+        string requestURL = APIAccess.apiUrlTTS;
+
+        JObject jdata = new JObject
+        {
+            { "model", "tts-1" },
+            { "input", endSpeechBad },
+            { "voice", "nova" },
+            { "speed", "0.9" }
+        };
+
+        string jsondata = jdata.ToString();
+
+        UnityWebRequest request = new UnityWebRequest(requestURL, "POST");
+        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsondata);
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+        request.SetRequestHeader("Authorization", "Bearer " + apiKey);
+
+        yield return request.SendWebRequest();
+
+        if (request.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError(request.error);
+        }
+        else
+        {
+            byte[] bytes = request.downloadHandler.data;
+            Debug.LogError("We saved de TTS! Bad");
+
+            string path = "Assets/BadendAudio.mp3";
+            File.WriteAllBytes(path, bytes);
+
+#if UNITY_EDITOR
+            AssetDatabase.ImportAsset(path);
+            Debug.Log("Saved to " + path);
+#endif
+            PlayAudio(path);
+
+            //anim
+            robAnim.WaveAnim(); //bad ending
         }
     }
     #endregion

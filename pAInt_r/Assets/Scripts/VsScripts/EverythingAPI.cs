@@ -17,6 +17,8 @@ public class EverythingAPI : MonoBehaviour
     
     
     private int ImagesCounter = 0;
+    private robAnim robAnim => GetComponent<robAnim>();
+
     #region Screenshot-taker
 
     // ----------------------------------- Screenshot-Taker Script ------------------------------------------------ //
@@ -87,7 +89,7 @@ public class EverythingAPI : MonoBehaviour
 
     public TextMeshProUGUI text;
 
-    private string apiKey = APIAccess.apiKey;
+    private string apiKey = APIAccessNew.apiKey;
     private string url = APIAccess.apiAdress;
     [SerializeField] private string role = "Answer like you are positively reacting to an art students work.";
     [SerializeField] private string question = "Look at the given image I've painted. What do you think? Please answer kindly.";
@@ -317,8 +319,11 @@ public class EverythingAPI : MonoBehaviour
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.clip = clip;
             audioSource.Play();
-            StartCoroutine(WaitForAudioEnd(audioSource));
 
+            // robart animation reaction
+            robAnim.CheerAnim();
+
+            StartCoroutine(WaitForAudioEnd(audioSource));
         }
         else
         {
@@ -331,7 +336,11 @@ public class EverythingAPI : MonoBehaviour
         yield return new WaitWhile(() => source.isPlaying);
         Texture2D tex = AITexture;
         targetCanvas.GetComponent<Renderer>().material.mainTexture = tex;
-        if(ImagesCounter == 3)
+
+        // robart anim stuff
+        robAnim.IdleAnim();
+
+        if (ImagesCounter == 3)
         {
             StartCoroutine(TextToSpeechEndCoroutine());
         }

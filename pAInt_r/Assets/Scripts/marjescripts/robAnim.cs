@@ -7,17 +7,6 @@ public class robAnim : MonoBehaviour
     public Animator animator;
     public Animator animatorGlitch;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void IdleAnim()
     {
@@ -46,6 +35,8 @@ public class robAnim : MonoBehaviour
 
     public void AppraisingAnim()
     {
+        Debug.Log("Appraising anim shoudl play now");
+
         //normal
         animator.SetBool("isAppraising", true);
 

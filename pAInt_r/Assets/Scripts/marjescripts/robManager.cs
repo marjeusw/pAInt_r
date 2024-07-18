@@ -21,9 +21,10 @@ public class robManager : MonoBehaviour
 
 	void Start()
 	{
-		//  RobArt.SetActive(true);
+        robart = GameHandler.GetComponent<robAnim>();
+        Animator animator = robart.GetComponent<Animator>();
 
-	}
+    }
 
 	//pressing space starts glitching coroutine
 	//some bugs occur if we don't use a button to start it so maybe we could use a button the user would use anyways (like switching colours or something)
@@ -60,11 +61,7 @@ public class robManager : MonoBehaviour
 
 	void GlitchAnim()
 	{
-		robart = GameHandler.GetComponent<robAnim>();
-		Animator animator = robart.GetComponent<Animator>();
 		robart.GlitchAnim();
 	}
-
-
 
 }

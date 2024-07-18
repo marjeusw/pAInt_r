@@ -20,7 +20,12 @@ public class RobArtCollisionHandler : MonoBehaviour
 	robAnim robart;
 	public GameObject GameHandler;
 
-    
+    public void Start()
+    {
+        robart = GameHandler.GetComponent<robAnim>();
+        Animator animator = robart.GetComponent<Animator>();
+    }
+
     //checks for collision
     public void OnCollisionEnter(Collision collision)
 	{
@@ -49,10 +54,8 @@ public class RobArtCollisionHandler : MonoBehaviour
         //collide = false;
     }
 
-	void Idle()
+	public void Idle()
 	{
-    	robart = GameHandler.GetComponent<robAnim>();
-    	Animator animator = robart.GetComponent<Animator>();
     	robart.IdleAnim();
 	}
 }

@@ -72,12 +72,6 @@ public class EverythingAPI : MonoBehaviour
         {
             Debug.LogWarning("Kein neues Bild zum speichern gefunden!");
         }     
-
-        // Save the bytes to a file
-        byte[] bytes = texture.EncodeToJPG();
-        string filePath = (folderPath + "/"+  $"{screenshotName}_{System.DateTime.Now:yyyyMMdd_HHmmss}.jpg");
-        File.WriteAllBytes(filePath, bytes);
-        Debug.Log($"Screenshot saved to: {filePath}");
     }
     private IEnumerator SetConditionAfterDelay(float delay)
     {
@@ -256,12 +250,13 @@ public class EverythingAPI : MonoBehaviour
         }
         else
         {
+            // Save the AI image also
             AITexture = ((DownloadHandlerTexture)request.downloadHandler).texture;
-            //targetCanvas.GetComponent<Renderer>().material.mainTexture = AITexture;
-            /*byte[] bytes = texture.EncodeToPNG();
-            string timeStamp = DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss");
-            System.IO.File.WriteAllBytes(Application.dataPath + "/img" + timeStamp + ".png", bytes);
-            */
+            // Save the bytes to a file
+            byte[] bytes = AITexture.EncodeToJPG();
+            string filePath = (folderPath + "/" + $"{screenshotName}_{System.DateTime.Now:yyyyMMdd_HHmmss}.jpg");
+            File.WriteAllBytes(filePath, bytes);
+            Debug.Log($"Screenshot saved to: {filePath}");
             StartCoroutine(TextToSpeechCoroutine());
         }
     }

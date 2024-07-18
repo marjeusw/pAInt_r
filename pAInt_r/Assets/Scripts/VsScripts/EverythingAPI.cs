@@ -89,7 +89,7 @@ public class EverythingAPI : MonoBehaviour
 
     public TextMeshProUGUI text;
 
-    private string apiKey = APIAccessNew.apiKey;
+    private string apiKey = APIAccess.apiKey;
     private string url = APIAccess.apiAdress;
     [SerializeField] private string role = "Answer like you are positively reacting to an art students work.";
     [SerializeField] private string question = "Look at the given image I've painted. What do you think? Please answer kindly.";

@@ -20,6 +20,9 @@ public class RobArtCollisionHandler : MonoBehaviour
 	robAnim robart;
 	public GameObject GameHandler;
 
+    //bool for badending
+    public bool badEnding;
+
     public void Start()
     {
         robart = GameHandler.GetComponent<robAnim>();
@@ -50,9 +53,10 @@ public class RobArtCollisionHandler : MonoBehaviour
         vid.clip = myclip;
 
         Idle();
+        robart.badEnding = false;
 
-        //collide = false;
-    }
+    //collide = false;
+}
 
 	public void Idle()
 	{

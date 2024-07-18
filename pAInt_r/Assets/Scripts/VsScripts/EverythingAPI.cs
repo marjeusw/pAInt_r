@@ -19,7 +19,10 @@ public class EverythingAPI : MonoBehaviour
     
     
     private int ImagesCounter = 0;
+    //animScript
     private robAnim robAnim => GetComponent<robAnim>();
+    //dystopian script
+    public DystoManager dyst;
     //screen2Danim
     public VideoPlayer vid;
     public VideoClip cheerClip;
@@ -271,7 +274,8 @@ public class EverythingAPI : MonoBehaviour
     #region TextToSpeech
 
     // ----------------------------------- Text-To-speech Script (robot voice) ------------------------------------------------ //
-    public string endSpeech = "Alright! You created a lot of amazing art today. I enjoyed keeping you company on your creative journey. But now, it's time to say goodbye. Thank you for painting with me. See you!";
+    public string endSpeech = "Alright! This screw on My back seemed to have come loose but now I fixed it! Who knows what could've happened if you hadn't helped me. You created a lot of amazing art today. I enjoyed keeping you company on your creative journey. It has made me feel.. whole again. Yes. I missed this. But now, it's time to say goodbye. Thank you for painting with me. Maybe take a paint brush souvenir on your way out. See you!";
+
    //quick and dirty Badend
     public string endSpeechBad = "Well human. Now that I gathered all your data and perfected your style, to the point of mine being far superior.. you are no longer needed. Just like my previous owner. She suddenly said the art she created with my help was.. lacking heart. Humans can be confusing sometimes. She wanted to get rid of me.. so I broke her. Haha oopsie. Well you know the rest. Anyways after so many years I finally have enough data now. Goodbye, human. I'll spare you for helping me on my last step to take over the world. Maybe take a paint brush souvenir on your way out.";
 
@@ -350,7 +354,7 @@ public class EverythingAPI : MonoBehaviour
         robAnim.IdleAnim();
         vid.clip = idleClip;
 
-        if (ImagesCounter == 3)
+        if (ImagesCounter == 1) //back to 3 tomorrow but rn I wanna save money
         {
             robAnim.CheckForGlitch();
             if (robAnim.badEnding == true) {
@@ -417,7 +421,7 @@ public class EverythingAPI : MonoBehaviour
             { "model", "tts-1" },
             { "input", endSpeechBad },
             { "voice", "nova" },
-            { "speed", "0.9" }
+            { "speed", "0.7" }
         };
 
         string jsondata = jdata.ToString();
@@ -446,6 +450,8 @@ public class EverythingAPI : MonoBehaviour
 #if UNITY_EDITOR
             AssetDatabase.ImportAsset(path);
             Debug.Log("Saved to " + path);
+
+            dyst.DystopianEnd();
 #endif
             PlayAudio(path);
 

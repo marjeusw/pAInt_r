@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
+
 
 public class robAnim : MonoBehaviour
 {
     public Animator animator;
     public Animator animatorGlitch;
+
+    //2Danim
+    public VideoPlayer vid;
+    public VideoClip appraiseClip;
 
 
     public void IdleAnim()
@@ -58,6 +64,8 @@ public class robAnim : MonoBehaviour
         animatorGlitch.SetBool("badEnd", false);
         animatorGlitch.SetBool("goodEnd", false);
         animatorGlitch.SetBool("byebye", false);
+
+        vid.clip = appraiseClip;
     }
     public void CheerAnim()
     {

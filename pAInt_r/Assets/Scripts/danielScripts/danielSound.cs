@@ -60,32 +60,32 @@ public class danielSound : MonoBehaviour
 		AkSoundEngine.PostEvent("PlayMusic", gameObject);
 	}
 	// - - - - - - - - - - - - - - - - - - - - -
-	void FadeInBlack()
+	public void FadeInBlack()
 	{
 		AkSoundEngine.PostEvent("FadeInBlack", gameObject);
 	}
 	// - - - - - - - - - - - - - - - - - - - - -
-	void FadeInBlue()
+	public void FadeInBlue()
 	{
 		AkSoundEngine.PostEvent("FadeInBlue", gameObject);
 	}
-	void FadeInBrown()
+	public void FadeInBrown()
 	{
 		AkSoundEngine.PostEvent("FadeInBrown", gameObject);
 	}
-	void FadeInCyan()
+	public void FadeInCyan()
 	{
 		AkSoundEngine.PostEvent("FadeInCyan", gameObject);
 	}
-	void FadeInGreen()
+	public void FadeInGreen()
 	{
 		AkSoundEngine.PostEvent("FadeInGreen", gameObject);
 	}
-	void FadeInMagenta()
+	public void FadeInMagenta()
 	{
 		AkSoundEngine.PostEvent("FadeInMagenta", gameObject);
 	}
-	void FadeInRed()
+	public void FadeInRed()
 	{
 		AkSoundEngine.PostEvent("FadeInRed", gameObject);
 	}
@@ -93,27 +93,27 @@ public class danielSound : MonoBehaviour
 	{
 		AkSoundEngine.PostEvent("FadeInWhite", gameObject);
 	}
-	void FadeInYellow()
+	public void FadeInYellow()
 	{
 		AkSoundEngine.PostEvent("FadeInYellow", gameObject);
 	}
-	void ImageGeneration()
+	public void ImageGeneration()
 	{
 		AkSoundEngine.PostEvent("ImageGeneration", gameObject);
 	}
-	void Glitches()
+	public void Glitches()
 	{
 		AkSoundEngine.PostEvent("Glitches", gameObject);
 	}
-	void GlitchesLoopsStartControl()
+	public void GlitchesLoopsStartControl()
 	{
 		AkSoundEngine.PostEvent("GlitchesLoopsStartControl", gameObject);
 	}
-	void GlitchesLoopsStopControl()
+	public void GlitchesLoopsStopControl()
 	{
 		AkSoundEngine.PostEvent("GlitchesLoopsStopControl", gameObject);
 	}
-	void BrushGrabbing()
+	public void BrushGrabbing()
 	{
 		AkSoundEngine.PostEvent("BrushGrabbing", gameObject);
 	}
@@ -121,7 +121,7 @@ public class danielSound : MonoBehaviour
 	{
 		AkSoundEngine.PostEvent("BrushStroking", gameObject);
 	}
-	void ButtonPressing()
+	public void ButtonPressing()
 	{
 		AkSoundEngine.PostEvent("ButtonPressing", gameObject);
 	}

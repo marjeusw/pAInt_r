@@ -16,14 +16,14 @@ public class robManager : MonoBehaviour
 	public VideoClip myclip;
 	robAnim robart;
 	public GameObject GameHandler;
-	//bool endWait;
+	public bool glitching;
 
 
 	void Start()
 	{
         robart = GameHandler.GetComponent<robAnim>();
         Animator animator = robart.GetComponent<Animator>();
-
+		glitching = false;
     }
 
 	//pressing space starts glitching coroutine
@@ -57,6 +57,7 @@ public class robManager : MonoBehaviour
 		//for the bluescreen
 		vid.clip = myclip;
 		//endWait = true;
+		glitching = true;
 	}
 
 	void GlitchAnim()
@@ -64,4 +65,14 @@ public class robManager : MonoBehaviour
 		robart.GlitchAnim();
 	}
 
+	public void StayBluescreen()
+    {
+		if(vid.clip != myclip && glitching == true)
+        {
+			vid.clip = myclip;
+			Debug.Log("should be bluescreen");        
+				
+		} 
+		
+    }
 }

@@ -13,6 +13,7 @@ public class DystoManager : MonoBehaviour
     public Material skyMaterialDysto;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,21 @@ public class DystoManager : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return) && dystopia == false)
+        {
+            Debug.Log("it work");
+            SolarPunk.SetActive(false);
+            Dystopia.SetActive(true);
+
+            RenderSettings.skybox = skyMaterialDysto;
+            DynamicGI.UpdateEnvironment(); //updates the lighting; otherwise still solarpunk lighting
+
+            dystopia = true;
+        }
+    }
+
+    public void DystopianEnd()
+    {
+        if (dystopia == false)
         {
             Debug.Log("it work");
             SolarPunk.SetActive(false);

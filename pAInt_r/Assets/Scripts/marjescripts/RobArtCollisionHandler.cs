@@ -18,7 +18,11 @@ public class RobArtCollisionHandler : MonoBehaviour
 	public bool collide;
 
 	robAnim robart;
+    public robManager robManager;
 	public GameObject GameHandler;
+
+    //bool for badending
+    public bool badEnding;
 
     public void Start()
     {
@@ -50,9 +54,12 @@ public class RobArtCollisionHandler : MonoBehaviour
         vid.clip = myclip;
 
         Idle();
+        robart.badEnding = false; //ref to animscript to not have bad ending
 
-        //collide = false;
-    }
+        robManager.glitching = false; //ref to robmanager to stay not stay bluescreen
+
+    //collide = false;
+}
 
 	public void Idle()
 	{

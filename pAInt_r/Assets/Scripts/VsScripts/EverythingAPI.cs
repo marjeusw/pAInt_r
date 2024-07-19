@@ -25,8 +25,8 @@ public class EverythingAPI : MonoBehaviour
     public DystoManager dyst;
     //screen2Danim
     public VideoPlayer vid;
-    public VideoClip cheerClip;
-    public VideoClip idleClip;
+    //public VideoClip cheerClip;
+    //public VideoClip idleClip;
 
     #region Screenshot-taker
 
@@ -335,7 +335,6 @@ public class EverythingAPI : MonoBehaviour
             // robart animation reaction
             robAnim.CheerAnim();
             //anim2D
-            vid.clip = cheerClip;
             StartCoroutine(WaitForAudioEnd(audioSource));
         }
         else
@@ -352,7 +351,6 @@ public class EverythingAPI : MonoBehaviour
 
         // robart anim stuff
         robAnim.IdleAnim();
-        vid.clip = idleClip;
 
         if (ImagesCounter == 1) //back to 3 tomorrow but rn I wanna save money
         {

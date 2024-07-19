@@ -9,11 +9,15 @@ public class robAnim : MonoBehaviour
     public Animator animator;
     public Animator animatorGlitch;
 
+    public robManager robManager;
+
     //2Danim
     public VideoPlayer vid;
     public VideoClip appraiseClip;
     public VideoClip goodEndClip;
     public VideoClip badEndClip;
+    public VideoClip cheerClip;
+    public VideoClip idleClip;
 
     //for check glitch
     public bool badEnding;
@@ -41,6 +45,9 @@ public class robAnim : MonoBehaviour
         animatorGlitch.SetBool("badEnd", false);
         animatorGlitch.SetBool("goodEnd", false);
         animatorGlitch.SetBool("byebye", false);
+
+        vid.clip = idleClip;
+        robManager.StayBluescreen();
 
     }
 
@@ -71,6 +78,8 @@ public class robAnim : MonoBehaviour
         animatorGlitch.SetBool("byebye", false);
 
         vid.clip = appraiseClip;
+
+        robManager.StayBluescreen();
     }
     public void CheerAnim()
     {
@@ -95,6 +104,9 @@ public class robAnim : MonoBehaviour
         animatorGlitch.SetBool("badEnd", false);
         animatorGlitch.SetBool("goodEnd", false);
         animatorGlitch.SetBool("byebye", false);
+
+        vid.clip = cheerClip;
+        robManager.StayBluescreen();
 
     }
     public void GlitchAnim()

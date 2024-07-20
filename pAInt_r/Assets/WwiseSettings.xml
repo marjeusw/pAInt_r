@@ -11,8 +11,8 @@
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
-  <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise2023.1.4.8496</WwiseInstallationPathWindows>
-  <WwiseProjectPath>F:/2024/master/2nd half/audio/P2_Wwise/Wwise_Integration_P2_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseInstallationPathWindows>C:\Wwise</WwiseInstallationPathWindows>
+  <WwiseProjectPath>D:/P2_Wwise 2/Wwise_Integration_P2_WwiseProject/Wwise_Integration_P2_WwiseProject.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

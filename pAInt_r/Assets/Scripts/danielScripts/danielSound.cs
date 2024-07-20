@@ -30,21 +30,21 @@ public class danielSound : MonoBehaviour
 	//coroutine to make sound start after video
 	IEnumerator WaitForVideo()
 	{
-		yield return new WaitForSeconds(4f); //60f
+		yield return new WaitForSeconds(60f); //60f
 
 		startMusic();
 		Animatic.SetActive(false);
 
         //relocate robart after the video is over so he stands next to the canvas
-        //Robart.transform.localPosition = new Vector3(-8.7f, -7.76f, 5.8f);
-        //Robart.transform.eulerAngles = new Vector3(0, 114f, 0);
+        Robart.transform.localPosition = new Vector3(-8.7f, -7.76f, 5.8f);
+        Robart.transform.eulerAngles = new Vector3(0, 114f, 0);
 
         //setting robarts rotation in general direction 
-        Robart.transform.eulerAngles = new Vector3(
+        /*Robart.transform.eulerAngles = new Vector3(
 			Robart.transform.eulerAngles.x,
 			Robart.transform.eulerAngles.y -90,
 			Robart.transform.eulerAngles.z
-			);
+			);*/
 
 		//animation robart		
 		Animator animator = gameObject.GetComponent<Animator>();

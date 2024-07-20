@@ -65,10 +65,13 @@ public class EverythingAPI : MonoBehaviour
         if (waited && ImagesCounter < 3)
         {
             waited = false;
-            StartCoroutine(SetConditionAfterDelay(2f)); // delay
+            StartCoroutine(SetConditionAfterDelay(4f)); // delay
             ImagesCounter++;
             PersistantData.imageData = texture.EncodeToJPG(); // Encode the texture to a JPG
             Debug.LogWarning("Neues Bild!");
+            byte[] bytes = AITexture.EncodeToJPG();
+            string filePath = (folderPath + "/" + $"{screenshotName}_{System.DateTime.Now:yyyyMMdd_HHmmss}-OD.jpg");
+            File.WriteAllBytes(filePath, bytes);
             SendImageToText();
         }
         else
